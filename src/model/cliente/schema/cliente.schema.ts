@@ -15,6 +15,6 @@ const ClienteSchema = new Schema(
     },
   },
   // eslint-disable-next-line @typescript-eslint/camelcase
-).index({ updated_at_mongo: 1 }, { expires: '25h' });
+).index({ updated_at_mongo: 1 }, { expires: '' });
 
 export { ClienteSchema };

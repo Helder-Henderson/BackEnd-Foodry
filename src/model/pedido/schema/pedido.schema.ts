@@ -6,9 +6,10 @@ const PedidoSchema = new Schema(
     status : {type:Boolean},
     tempoEstimado: {type:String},
     numeroPedido: {type: String},
-    valorPedido: { type: String },
+    totalPedido: { type: String },
     cpf: { type: String, ref: 'Cliente', index: true },
     produtos: { type: [Object] },
+    tempo : {type : String} 
   },
   {
     timestamps: {
